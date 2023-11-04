@@ -1,0 +1,17 @@
+body{
+  background:url(https://thumbs.dreamstime.com/b/happy-birthday-cake-sparklers-greeting-card-p-fullhd-93080753.jpg?w=576;);
+  background-repeat: no-repeat;
+  background-size:cover;
+  text-align: center;
+}
+form{
+  font-size: 1.5em;
+}
+#sub{
+  height: 60px;
+  width: 140px;
+  margin: 15px;
+  font-size: 1.2em;
+  background: green;
+  border-radius:25px;
+}

@@ -1,0 +1,17 @@
+body{
+  background:url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcm00NjdiYXRjaDUtc2NlbmUtdy0wMDItbDBha3pzejYuanBn.jpg;);
+  background-repeat: no-repeat;
+  background-size:cover;
+  text-align: center;
+}
+form{
+  font-size: 1.5em;
+}
+#sub{
+  height: 60px;
+  width: 140px;
+  margin: 15px;
+  font-size: 1.2em;
+  background: green;
+  border-radius:25px;
+}

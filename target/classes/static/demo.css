@@ -1,0 +1,16 @@
+body{
+  background: #ffe6f0;
+  text-align: center;
+ 
+
+  padding: 20px;
+  width: 700px;
+  margin: 20px auto;
+}
+.center-table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+.center-table {
+  font-size: 1.5em;
+}

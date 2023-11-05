@@ -1,0 +1,9 @@
+com\prorigo\emailservice\BirthdayReminder.class
+com\prorigo\BirthdayReminderAppApplication.class
+com\prorigo\config\WebMvcConfig.class
+com\prorigo\service\FriendServiceImpl.class
+com\prorigo\service\FriendService.class
+com\prorigo\controller\FriendController.class
+com\prorigo\repository\FriendRepository.class
+com\prorigo\restcontroller\FriendRestController.class
+com\prorigo\model\FriendsInfo.class

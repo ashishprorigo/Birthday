@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Birthday Remainder Application</title>
+<link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+ integrity="sha384-MCw98/SFnGE8FJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkF0JwJ8ERdknLPMO"
+  crossorigin="anonymous" >
+  <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+
+   <h1><u> All Friend Birthday's</u></h1>
+   <table class="center-table" border="1" >
+   <thead>
+    <tr>
+    <th>Friend Name</th>
+    <th>Friend DOB</th>
+    <th>Email</th>
+    <th>Actions</th>
+    </tr>
+ </thead>
+ <tbody>
+   <tr th:each="friendsInfo : ${listFriend}">
+     <td th:text="${friendsInfo.name}"></td>
+     <td th:text="${friendsInfo.dateOfBirth}"></td>
+     <td th:text="${friendsInfo.mail}"></td>
+     <td> <a th:href="@{/deleteFriend/{id}(id=${friendsInfo.id})}" class="btn btn-primary"> Delete</a>
+      <a th:href="@{/updateFriend/{id}(id=${friendsInfo.id})}" class="btn btn-danger"> Edit </a>
+     </td>
+     </tr>
+ </tbody>
+   </table>
+
+
+</body>
+</html>

@@ -17,7 +17,7 @@ import com.prorigo.model.FriendsInfo;
 
 import com.prorigo.service.FriendService;
 
-@RestController
+//@RestController
 public class FriendRestController {
 
 	@Autowired

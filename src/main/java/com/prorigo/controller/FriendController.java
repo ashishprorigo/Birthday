@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.prorigo.model.FriendsInfo;
 import com.prorigo.service.FriendService;
 
-@Controller
+//@Controller
 public class FriendController {
 
 	@Autowired

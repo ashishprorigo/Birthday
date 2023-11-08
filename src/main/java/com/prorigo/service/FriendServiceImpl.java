@@ -47,5 +47,13 @@ public class FriendServiceImpl implements FriendService{
 		return info;
 	}
 	
+		public FriendsInfo getBirthdayById(Long id) {
+			return friendRepository.findById(id).orElse(null);
+		}
+	 
+	   @Override
+		public FriendsInfo updateBirthday(FriendsInfo updatedBirthday) {
+			return friendRepository.save(updatedBirthday);
+		}
 
 }

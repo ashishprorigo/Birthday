@@ -10,4 +10,6 @@ public interface FriendService {
 	public String saveFriend(FriendsInfo friendInfo);
 	public String deleteFriendById(long id);
 	public FriendsInfo getFriendById(long id);
+	FriendsInfo getBirthdayById(Long id);
+	FriendsInfo updateBirthday(FriendsInfo updatedBirthday);
 }   

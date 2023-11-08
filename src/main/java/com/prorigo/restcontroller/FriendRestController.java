@@ -17,7 +17,7 @@ import com.prorigo.model.FriendsInfo;
 
 import com.prorigo.service.FriendService;
 
-//@RestController
+@RestController
 public class FriendRestController {
 
 	@Autowired
@@ -36,11 +36,32 @@ public class FriendRestController {
 		return new ResponseEntity<>(info,HttpStatus.OK);
 	}
 	
-	@PutMapping("/updatefriend")
-	public ResponseEntity<String> updateFriendInfo(@RequestBody FriendsInfo info){
-		String status=friendService.saveFriend(info);
-		return new ResponseEntity<>(status,HttpStatus.OK);
-	}
+//	@PutMapping("/updatefriend")
+//	public ResponseEntity<String> updateFriendInfo(@RequestBody FriendsInfo info){
+//		String status=friendService.saveFriend(info);
+//		return new ResponseEntity<>(status,HttpStatus.OK);
+//	}
+	
+	@PutMapping("update/{id}")
+	public ResponseEntity<FriendsInfo> updateBirthday(@PathVariable Long id, @RequestBody FriendsInfo updatedBirthday) {
+		FriendsInfo existingBirthday = friendService.getBirthdayById(id);
+ 
+		if (existingBirthday == null) {
+			// Handle the case where the birthday with the given ID doesn't exist.
+			return ResponseEntity.notFound().build();
+		}
+ 
+		// Update the existing birthday with the new data
+		existingBirthday.setName(updatedBirthday.getName());
+		existingBirthday.setDateOfBirth(updatedBirthday.getDateOfBirth());
+		existingBirthday.setMail(updatedBirthday.getMail());
+ 
+		// Save the updated birthday
+		friendService.updateBirthday(existingBirthday);
+ 
+		return ResponseEntity.ok(existingBirthday);
+	
+}
 	
 	@DeleteMapping("/all/{id}")
 	public ResponseEntity<String> deleteFriendInfo(@PathVariable Long id){

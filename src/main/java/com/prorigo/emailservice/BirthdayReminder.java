@@ -12,6 +12,8 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Service;
+
 import com.prorigo.model.FriendsInfo;
 import com.prorigo.repository.FriendRepository;
 
@@ -19,7 +21,8 @@ import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;
 
 @Configuration
-@EnableScheduling
+//@EnableScheduling
+@Service
 public class BirthdayReminder {
 	
 	@Autowired
@@ -28,24 +31,8 @@ public class BirthdayReminder {
 	  @Autowired
 	    private FriendRepository friendRepository;
          
-//	    // @Scheduled(cron = "0 * * * * *")
-//	    //@Scheduled(cron = "0 0 0 * * *") // This example runs at midnight every day
-//	    public List<FriendsInfo> checkUpcomingBirthdays() {
-//	        LocalDate today = LocalDate.now();
-//	        List<FriendsInfo> upcoming = friendRepository.findByDOB(today);
-//
-//	        for (FriendsInfo friendInfo : upcoming) {
-//	            // Send birthday reminders or perform any necessary actions
-//	            System.out.println("Birthday Reminder: " +friendInfo.getName() + " has a birthday today!");
-//	        }
-//	        return upcoming;
-//	    }
-	  
-	 
-//	  public void sendBirthdayReminders() {
-//	        sendBirthdayReminder();
-//	    }
-//	    
+
+  
 	  //@Scheduled(cron= "* * * * * *") for Every second
 	 // @Scheduled(cron = "0 0 0 * * *")at 12 midnight
 	  // @Scheduled(cron="*/10 * * * * *") //for every 10 sec.
@@ -67,14 +54,10 @@ public class BirthdayReminder {
 	        }
 	    }
 
-//	    private int calculateRemainingDaysUntilNextBirthday(LocalDate dateOfBirth) {
-//			// TODO Auto-generated method stub
-//			return 0;
-//		}
+
 
 		public int calculateRemainingDaysUntilNextBirthday(Date DOB) {
-	        // Implement the remaining days calculation logic (similar to the previous example).
-	        // ...
+	       
 	    	   Calendar birthDate = new GregorianCalendar();
 	           birthDate.setTime(DOB);
 
@@ -107,24 +90,7 @@ public class BirthdayReminder {
 	        return remainingDays;
 	    }
 
-//	    public void sendEmailReminder(FriendsInfo friendsInfo, int remainingDays) {
-//	    	
-//	    	   try {
-//	               MimeMessage message = javaMailSender.createMimeMessage();
-//	               MimeMessageHelper helper = new MimeMessageHelper(message, true);
-//
-//	               helper.setTo(friendsInfo.getMail());
-//	               helper.setSubject("Birthday Reminder: " + friendsInfo.getName());
-//	               helper.setText("Wishing you a happy birthday, " + friendsInfo.getName() + "!", true);
-//	               
-//
-//	               javaMailSender.send(message);
-//	           } catch (MessagingException e) {
-//	               e.printStackTrace();
-//	           }
-//	      
-//	    }
-//		
+		
 		public void sendEmailReminder(FriendsInfo friendInfo,int remainingDays) {
 			SimpleMailMessage message = new SimpleMailMessage();
 			message.setFrom("wagha5624@gmail.com");;

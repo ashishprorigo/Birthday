@@ -51,7 +51,7 @@ public class FriendController {
 	@GetMapping("/updateFriend/{id}")
 	public String showFormForUpdateFriend(@PathVariable (value="id") long id,Model model) {
 		
-		FriendsInfo info =friendService.getFriendById(id);
+		FriendsInfo info =friendService.getBirthdayById(id);
 		model.addAttribute("friendsInfo",info );
 		return "update_friend";
 	}

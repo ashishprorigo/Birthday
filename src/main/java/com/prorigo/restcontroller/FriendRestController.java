@@ -2,6 +2,8 @@ package com.prorigo.restcontroller;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,51 +22,55 @@ import com.prorigo.service.FriendService;
 @RestController
 public class FriendRestController {
 
+	private static final Logger logger=LoggerFactory.getLogger(FriendRestController.class);
+	
 	@Autowired
 	private FriendService friendService;
 	
 	
+	
+
 	@PostMapping("/savefriend")
 	public ResponseEntity<String> addFriend(@RequestBody FriendsInfo friendInfo) {
-		 friendService.saveFriend(friendInfo);
-		 return new ResponseEntity<>("Freind Saved",HttpStatus.CREATED);
+		logger.info("Recieved Request to add friend : {}",friendInfo.toString()); 
+		friendService.saveFriend(friendInfo);
+		 return new ResponseEntity<>("Friend saved ",HttpStatus.CREATED);
 	}
 	
 	@GetMapping("/all")
 	public ResponseEntity<List<FriendsInfo>> getAllFriends(){
+		logger.info("Recieved Request to get all friend"); 
 		List<FriendsInfo> info=friendService.getAllFriends();
 		return new ResponseEntity<>(info,HttpStatus.OK);
 	}
 	
-//	@PutMapping("/updatefriend")
-//	public ResponseEntity<String> updateFriendInfo(@RequestBody FriendsInfo info){
-//		String status=friendService.saveFriend(info);
-//		return new ResponseEntity<>(status,HttpStatus.OK);
-//	}
+
 	
 	@PutMapping("update/{id}")
 	public ResponseEntity<FriendsInfo> updateBirthday(@PathVariable Long id, @RequestBody FriendsInfo updatedBirthday) {
+		logger.info("Recieved Request to update friend by with ID {},{}",id,updatedBirthday); 
 		FriendsInfo existingBirthday = friendService.getBirthdayById(id);
  
 		if (existingBirthday == null) {
-			// Handle the case where the birthday with the given ID doesn't exist.
+			
+			logger.warn("Friend with ID {} not found for update",id);
 			return ResponseEntity.notFound().build();
 		}
  
-		// Update the existing birthday with the new data
 		existingBirthday.setName(updatedBirthday.getName());
 		existingBirthday.setDateOfBirth(updatedBirthday.getDateOfBirth());
 		existingBirthday.setMail(updatedBirthday.getMail());
  
 		// Save the updated birthday
 		friendService.updateBirthday(existingBirthday);
- 
+        logger.info("Friend with ID{} updated successfully",id);
 		return ResponseEntity.ok(existingBirthday);
 	
 }
 	
-	@DeleteMapping("/all/{id}")
+	@DeleteMapping("/delete/{id}")
 	public ResponseEntity<String> deleteFriendInfo(@PathVariable Long id){
+		logger.info("Received request to delete friend with ID {}",id);
 		String status =friendService.deleteFriendById(id);
 		return new ResponseEntity<>(status,HttpStatus.OK);
 	}

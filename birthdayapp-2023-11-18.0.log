@@ -1,0 +1,144 @@
+2023-11-18T21:19:02.795+05:30  INFO 21028 --- [restartedMain] c.p.BirthdayReminderAppApplication       : Starting BirthdayReminderAppApplication using Java 17.0.9 with PID 21028 (D:\BirthdaayApp\BirthdayReminderApp\BirthdayReminderApp\target\classes started by ashishw in D:\BirthdaayApp\BirthdayReminderApp\BirthdayReminderApp)
+2023-11-18T21:19:02.797+05:30  INFO 21028 --- [restartedMain] c.p.BirthdayReminderAppApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-11-18T21:19:02.837+05:30  INFO 21028 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-18T21:19:02.838+05:30  INFO 21028 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-18T21:19:03.230+05:30  INFO 21028 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-18T21:19:03.283+05:30  INFO 21028 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2023-11-18T21:19:03.712+05:30  INFO 21028 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-18T21:19:03.719+05:30  INFO 21028 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-18T21:19:03.719+05:30  INFO 21028 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-18T21:19:03.763+05:30  INFO 21028 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-18T21:19:03.763+05:30  INFO 21028 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 923 ms
+2023-11-18T21:19:03.848+05:30  INFO 21028 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-18T21:19:03.876+05:30  INFO 21028 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-11-18T21:19:03.878+05:30  INFO 21028 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-11-18T21:19:04.036+05:30  INFO 21028 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-18T21:19:04.053+05:30  INFO 21028 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-18T21:19:04.245+05:30  INFO 21028 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b1a8039
+2023-11-18T21:19:04.247+05:30  INFO 21028 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-18T21:19:04.279+05:30  WARN 21028 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-11-18T21:19:04.280+05:30  WARN 21028 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-11-18T21:19:04.780+05:30  INFO 21028 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-11-18T21:19:04.814+05:30  INFO 21028 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-18T21:19:04.982+05:30  INFO 21028 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-11-18T21:19:05.212+05:30  WARN 21028 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-18T21:19:05.306+05:30  INFO 21028 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-11-18T21:19:05.430+05:30  INFO 21028 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-18T21:19:05.476+05:30  INFO 21028 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-18T21:19:05.485+05:30  INFO 21028 --- [restartedMain] c.p.BirthdayReminderAppApplication       : Started BirthdayReminderAppApplication in 3.036 seconds (process running for 3.718)
+2023-11-18T21:19:36.728+05:30  INFO 21028 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-18T21:19:36.728+05:30  INFO 21028 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-18T21:19:36.730+05:30  INFO 21028 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-18T21:19:36.766+05:30  INFO 21028 --- [http-nio-8080-exec-1] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:19:36.767+05:30  INFO 21028 --- [http-nio-8080-exec-1] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:22:00.430+05:30  INFO 21028 --- [http-nio-8080-exec-7] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:22:00.430+05:30  INFO 21028 --- [http-nio-8080-exec-7] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:22:01.159+05:30  INFO 21028 --- [http-nio-8080-exec-6] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:22:01.159+05:30  INFO 21028 --- [http-nio-8080-exec-6] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:22:01.943+05:30  INFO 21028 --- [http-nio-8080-exec-4] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:22:01.943+05:30  INFO 21028 --- [http-nio-8080-exec-4] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:22:02.429+05:30  INFO 21028 --- [http-nio-8080-exec-9] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:22:02.430+05:30  INFO 21028 --- [http-nio-8080-exec-9] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:22:02.725+05:30  INFO 21028 --- [http-nio-8080-exec-10] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:22:02.725+05:30  INFO 21028 --- [http-nio-8080-exec-10] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:22:03.192+05:30  INFO 21028 --- [http-nio-8080-exec-8] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:22:03.192+05:30  INFO 21028 --- [http-nio-8080-exec-8] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:22:03.551+05:30  INFO 21028 --- [http-nio-8080-exec-2] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:22:03.552+05:30  INFO 21028 --- [http-nio-8080-exec-2] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:22:03.911+05:30  INFO 21028 --- [http-nio-8080-exec-1] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:22:03.912+05:30  INFO 21028 --- [http-nio-8080-exec-1] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:22:04.254+05:30  INFO 21028 --- [http-nio-8080-exec-5] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:22:04.255+05:30  INFO 21028 --- [http-nio-8080-exec-5] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:22:04.630+05:30  INFO 21028 --- [http-nio-8080-exec-3] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:22:04.630+05:30  INFO 21028 --- [http-nio-8080-exec-3] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:33:43.581+05:30  INFO 21028 --- [RMI TCP Connection(19)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-11-18T21:33:43.595+05:30  INFO 21028 --- [RMI TCP Connection(19)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-11-18T21:33:43.596+05:30  INFO 21028 --- [RMI TCP Connection(19)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-18T21:33:43.601+05:30  INFO 21028 --- [RMI TCP Connection(19)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-18T21:33:43.603+05:30  INFO 21028 --- [RMI TCP Connection(19)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-18T21:33:43.610+05:30  INFO 21028 --- [RMI TCP Connection(19)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-18T21:33:55.978+05:30  INFO 23932 --- [restartedMain] c.p.BirthdayReminderAppApplication       : Starting BirthdayReminderAppApplication using Java 17.0.9 with PID 23932 (D:\BirthdaayApp\BirthdayReminderApp\BirthdayReminderApp\target\classes started by ashishw in D:\BirthdaayApp\BirthdayReminderApp\BirthdayReminderApp)
+2023-11-18T21:33:55.979+05:30  INFO 23932 --- [restartedMain] c.p.BirthdayReminderAppApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-11-18T21:33:56.024+05:30  INFO 23932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-18T21:33:56.024+05:30  INFO 23932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-18T21:33:56.399+05:30  INFO 23932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-18T21:33:56.445+05:30  INFO 23932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2023-11-18T21:33:56.837+05:30  INFO 23932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-18T21:33:56.843+05:30  INFO 23932 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-18T21:33:56.843+05:30  INFO 23932 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-18T21:33:56.886+05:30  INFO 23932 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-18T21:33:56.886+05:30  INFO 23932 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 861 ms
+2023-11-18T21:33:56.969+05:30  INFO 23932 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-18T21:33:56.996+05:30  INFO 23932 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-11-18T21:33:56.997+05:30  INFO 23932 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-11-18T21:33:57.145+05:30  INFO 23932 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-18T21:33:57.166+05:30  INFO 23932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-18T21:33:57.358+05:30  INFO 23932 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ee5aef6
+2023-11-18T21:33:57.360+05:30  INFO 23932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-18T21:33:57.396+05:30  WARN 23932 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-11-18T21:33:57.396+05:30  WARN 23932 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-11-18T21:33:57.886+05:30  INFO 23932 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-11-18T21:33:57.918+05:30  INFO 23932 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-18T21:33:58.087+05:30  INFO 23932 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-11-18T21:33:58.307+05:30  WARN 23932 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-18T21:33:58.400+05:30  INFO 23932 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-11-18T21:33:58.525+05:30  INFO 23932 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-18T21:33:58.554+05:30  INFO 23932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-18T21:33:58.564+05:30  INFO 23932 --- [restartedMain] c.p.BirthdayReminderAppApplication       : Started BirthdayReminderAppApplication in 2.893 seconds (process running for 3.416)
+2023-11-18T21:34:05.717+05:30  INFO 23932 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-18T21:34:05.717+05:30  INFO 23932 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-18T21:34:05.718+05:30  INFO 23932 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-18T21:34:05.740+05:30  INFO 23932 --- [http-nio-8080-exec-3] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:05.740+05:30  INFO 23932 --- [http-nio-8080-exec-3] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:34:06.706+05:30  INFO 23932 --- [http-nio-8080-exec-1] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:06.707+05:30  INFO 23932 --- [http-nio-8080-exec-1] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:34:07.472+05:30  INFO 23932 --- [http-nio-8080-exec-6] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:07.472+05:30  INFO 23932 --- [http-nio-8080-exec-6] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:34:08.613+05:30  INFO 23932 --- [http-nio-8080-exec-5] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:08.614+05:30  INFO 23932 --- [http-nio-8080-exec-5] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:34:08.941+05:30  INFO 23932 --- [http-nio-8080-exec-2] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:08.941+05:30  INFO 23932 --- [http-nio-8080-exec-2] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:34:10.338+05:30  INFO 23932 --- [http-nio-8080-exec-7] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:10.338+05:30  INFO 23932 --- [http-nio-8080-exec-7] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:34:12.701+05:30  INFO 23932 --- [http-nio-8080-exec-9] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:12.702+05:30  INFO 23932 --- [http-nio-8080-exec-9] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:34:13.018+05:30  INFO 23932 --- [http-nio-8080-exec-10] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:13.018+05:30  INFO 23932 --- [http-nio-8080-exec-10] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:34:28.382+05:30  INFO 23932 --- [http-nio-8080-exec-3] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:28.383+05:30  INFO 23932 --- [http-nio-8080-exec-3] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:34:29.420+05:30  INFO 23932 --- [http-nio-8080-exec-1] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:29.420+05:30  INFO 23932 --- [http-nio-8080-exec-1] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:34:30.408+05:30  INFO 23932 --- [http-nio-8080-exec-6] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:30.408+05:30  INFO 23932 --- [http-nio-8080-exec-6] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:34:31.605+05:30  INFO 23932 --- [http-nio-8080-exec-5] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:31.605+05:30  INFO 23932 --- [http-nio-8080-exec-5] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:34:32.380+05:30  INFO 23932 --- [http-nio-8080-exec-2] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:32.380+05:30  INFO 23932 --- [http-nio-8080-exec-2] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:34:33.083+05:30  INFO 23932 --- [http-nio-8080-exec-7] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:33.083+05:30  INFO 23932 --- [http-nio-8080-exec-7] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:34:33.729+05:30  INFO 23932 --- [http-nio-8080-exec-9] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:33.729+05:30  INFO 23932 --- [http-nio-8080-exec-9] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:34:34.463+05:30  INFO 23932 --- [http-nio-8080-exec-8] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:34.463+05:30  INFO 23932 --- [http-nio-8080-exec-8] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:34:35.136+05:30  INFO 23932 --- [http-nio-8080-exec-4] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:35.136+05:30  INFO 23932 --- [http-nio-8080-exec-4] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:34:36.259+05:30  INFO 23932 --- [http-nio-8080-exec-10] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:36.260+05:30  INFO 23932 --- [http-nio-8080-exec-10] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:34:36.989+05:30  INFO 23932 --- [http-nio-8080-exec-3] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:36.989+05:30  INFO 23932 --- [http-nio-8080-exec-3] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:34:38.024+05:30  INFO 23932 --- [http-nio-8080-exec-1] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:38.024+05:30  INFO 23932 --- [http-nio-8080-exec-1] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:34:38.698+05:30  INFO 23932 --- [http-nio-8080-exec-6] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:38.698+05:30  INFO 23932 --- [http-nio-8080-exec-6] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:34:39.542+05:30  INFO 23932 --- [http-nio-8080-exec-5] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:39.542+05:30  INFO 23932 --- [http-nio-8080-exec-5] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:34:40.238+05:30  INFO 23932 --- [http-nio-8080-exec-2] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:40.239+05:30  INFO 23932 --- [http-nio-8080-exec-2] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:34:41.177+05:30  INFO 23932 --- [http-nio-8080-exec-7] c.p.restcontroller.FriendRestController  : Recieved Request to get all friend
+2023-11-18T21:34:41.177+05:30  INFO 23932 --- [http-nio-8080-exec-7] com.prorigo.service.FriendServiceImpl    : Fetching all friends
+2023-11-18T21:49:56.923+05:30  INFO 23932 --- [RMI TCP Connection(18)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-11-18T21:49:56.940+05:30  INFO 23932 --- [RMI TCP Connection(18)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-11-18T21:49:56.941+05:30  INFO 23932 --- [RMI TCP Connection(18)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-18T21:49:56.948+05:30  INFO 23932 --- [RMI TCP Connection(18)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-18T21:49:56.952+05:30  INFO 23932 --- [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-18T21:49:56.959+05:30  INFO 23932 --- [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

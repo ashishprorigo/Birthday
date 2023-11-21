@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 9090
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -23,3 +23,13 @@ spring:
           starttls:
             enable: true
     username: wagha5624@gmail.com
+    
+logging:
+     file:
+         max-history: 30
+         max-size: 1MB
+         name: birthdayapp.log
+         total-size-cap: 10MB
+     pattern:
+         rolling-file-name: birthdayapp-%d{yyyy-MM-dd}.%i.log        
+    

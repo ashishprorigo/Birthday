@@ -9,7 +9,7 @@ public interface FriendService {
 	List<FriendsInfo> getAllFriends();
 	public String saveFriend(FriendsInfo friendInfo);
 	public String deleteFriendById(long id);
-	public FriendsInfo getFriendById(long id);
-	FriendsInfo getBirthdayById(Long id);
+	//public FriendsInfo getFriendById(long id);
+	FriendsInfo getBirthdayById(long id);
 	FriendsInfo updateBirthday(FriendsInfo updatedBirthday);
 }   
